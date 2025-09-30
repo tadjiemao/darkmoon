@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="other/icon.ico" type="image/x-icon">
+	<title>[The Dark Side of the Moon]</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+	<body>
+	 <video autoplay muted loop playsinline id="video">
+		<source src="other/dynamic_background.mp4" type="video/mp4">
+	 </video>
+	 <div class="stars"></div>
+	 <div class="container">
+	  <div class="player">
+		<div>
+			<img class="album-cover" src="other/default.png" alt="Album Cover">
+			<div><img class="album-cover-base" src="other/disco.png" alt="Album Cover Base"></div>
+		</div>
+		<audio id="audio"></audio>
+		<div class="song-name" id="songName"></div> 	
+		<div class="time-display" id="timeDisplay">
+		  <span class="current-time">0:00</span>
+		  <span class="total-time">0:00</span>
+		</div>		
+		<div class="progress" id="progressContainer">
+		  <div class="progress-bar" id="progressBar"></div>
+		</div>
+		<div class="controls">
+		  <button onclick="previousSong()">PREVIOUS</button>
+		  <button onclick="playPauseMusic()">PLAY/PAUSE</button>
+		  <button onclick="stopMusic()">STOP</button>
+		  <button onclick="nextSong()">NEXT</button>
+		</div>
+		<div class="playlist">
+		  <label for="songList">SELECT TRACK：</label>
+		  <select id="songList" onchange="changeSong()">
+			<option value="0">01 - Speak To Me</option>
+			<option value="1">02 - Breathe (In The Air)</option>
+			<option value="2">03 - On The Run</option>
+			<option value="3">04 - Time</option>
+			<option value="4">05 - The Great Gig In The Sky</option>
+			<option value="5">06 - Money</option>
+			<option value="6">07 - Us And Them</option>
+			<option value="7">08 - Any Colour You Like</option>
+			<option value="8">09 - Brain Damage</option>
+			<option value="9">10 - Eclipse</option>
+		  </select>
+		</div>
+	  </div>
+	 </div> 
+	 <footer>
+		&copy; Web Designer : Nocti-Cat
+	 </footer>  
+	 <script src="script.js"></script>
+	</body>
+</html>
