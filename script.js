@@ -33,7 +33,7 @@ function showProgress() {
 
 function playMusic() { 
   audio.play();
-  albumCover.style.animation = 'rotate 8s linear infinite';
+  albumCover.style.animation = 'rotate 18s linear infinite';
   isPlaying = true;
   showProgress();
   songNameElement.style.visibility = 'visible';
@@ -238,4 +238,5 @@ for (let i = 0; i < 100; i++) {
 	star.style.height = star.style.width;
 	star.style.animationDuration = Math.random() * 2 + 1 + 's';
 	stars.appendChild(star);
+
 }
