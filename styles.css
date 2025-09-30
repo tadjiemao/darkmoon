@@ -5,12 +5,7 @@ body {
   align-items: center; 
   height: 100vh; 
   margin: 0;
-/*  
-  background-image: url("other/static_background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-*/
+  color: white;
   overflow-Y: hidden; 
 }
 
@@ -36,13 +31,20 @@ body {
 	100% { opacity: 0; transform: scale(0); }
 }
 
-/*
-@media only screen and (max-width: 980px) {	
-	body {
-		background: #000; 
-	}
+.headphones-image {
+  position: fixed;     
+  top: 15px;            
+  left: 15px;            
+  width: 50px;          
+  opacity: 0;           
+  animation: fadeIn 10s ease forwards; 
+  animation-delay: 5s;    
 }
-*/
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
 .container {
   display: flex;
@@ -52,12 +54,12 @@ body {
 
 .player {
   text-align: center; 
-  background-color: rgba(255, 255, 255, 0.8); 
+  background-color: rgba(255, 255, 255, 0); 
   padding: 40px; 
   border-radius: 10px; 
-  box-shadow: 0 15px 15px rgba(105, 105, 105, 0.5);
+/* box-shadow: 0 15px 15px rgba(105, 105, 105, 0.5); */
   height: 572px;
-  border: 5px solid #F5F5F5;
+/* border: 5px solid #F5F5F5; */
 }
 
 .album-cover {
